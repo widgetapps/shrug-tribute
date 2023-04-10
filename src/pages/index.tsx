@@ -24,12 +24,23 @@ export default function Home() {
                     </span>
                     <div className="grid grid-cols-2">
                         <div>
-                            Featuring performances by:
+                            <h3 className={`${inter.className}`}>Featuring performances by:</h3>
+                            <ul>
+                                <li>4 Really Nice Guys</li>
+                                <li>Scissors For Erica</li>
+                                <li>Spiderback</li>
+                            </ul>
                         </div>
                         <div>
-                            One night only:
+                            <h3 className={`${inter.className}`}>One night only:</h3>
+                            <ul>
+                                <li>Thursday, Nov 2, 2023</li>
+                                <li>Loplops Gallery Lounge</li>
+                                <li>Sault Ste Marie, ON</li>
+                            </ul>
                         </div>
                     </div>
+                    BUTTON
                 </div>
             </div>
         </main>
