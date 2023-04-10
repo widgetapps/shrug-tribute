@@ -24,10 +24,10 @@ export default function Home() {
                     </span>
                     <div className="grid grid-cols-2">
                         <div>
-                            Bands
+                            Featuring performances by:
                         </div>
                         <div>
-                            When
+                            One night only:
                         </div>
                     </div>
                 </div>
