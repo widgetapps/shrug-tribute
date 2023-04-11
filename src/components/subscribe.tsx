@@ -109,7 +109,7 @@ export default function Subscribe({open, setOpen}) {
                                                         </div>
                                                         <div className="ml-3 text-sm leading-6">
                                                             <label htmlFor="shirt" className="font-medium text-gray-900">
-                                                                I'm interested in buying a shirt
+                                                                I&apos;m interested in buying a shirt
                                                             </label>
                                                             <p id="shirt-description" className="text-gray-500">
                                                                 Final price is TBD, but should be $20-$30 each
