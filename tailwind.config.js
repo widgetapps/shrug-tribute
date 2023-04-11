@@ -14,7 +14,9 @@ module.exports = {
         'top-elephant': 'center top -4rem'
       },
       colors: {
-        'shruggb': '#ebebeb'
+        'shrug-bg': '#ebebeb',
+        'shrug-red': '#E92300',
+        'shrug-red-400': '#EB6D56'
       }
     },
   },

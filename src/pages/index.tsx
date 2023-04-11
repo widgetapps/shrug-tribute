@@ -18,29 +18,34 @@ export default function Home() {
                         priority
                     />
                 </div>
-                <div className="mt-40 p-4 bg-shruggb text-center">
+                <div className="mt-40 p-4 bg-shrug-bg text-center">
                     <span className={`${ebgaramond.className} text-3xl font-bold`}>
                         A CELEBRATION of Mike Robillard’s Life in Music
                     </span>
                     <div className="grid grid-cols-2">
-                        <div>
+                        <div className="text-left">
                             <h3 className={`${inter.className}`}>Featuring performances by:</h3>
-                            <ul>
+                            <ul className="text-left">
                                 <li>4 Really Nice Guys</li>
                                 <li>Scissors For Erica</li>
                                 <li>Spiderback</li>
                             </ul>
                         </div>
-                        <div>
+                        <div className="text-right">
                             <h3 className={`${inter.className}`}>One night only:</h3>
-                            <ul>
+                            <ul className="text-right">
                                 <li>Thursday, Nov 2, 2023</li>
                                 <li>Loplops Gallery Lounge</li>
                                 <li>Sault Ste Marie, ON</li>
                             </ul>
                         </div>
                     </div>
-                    BUTTON
+                    <button
+                        type="button"
+                        className="rounded-md bg-shrug-red px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shrug-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >
+                        GET ON THE ADVANCED TICKET LIST
+                    </button>
                 </div>
             </div>
         </main>
