@@ -26,13 +26,13 @@ export default function Home() {
                             priority
                         />
                     </div>
-                    <div className="mt-10 sm:mt-40 pt-4 pr-6 pb-6 pl-6 bg-shrug-bg text-center bg-opacity-80 sm:rounded-lg sm:shadow-md">
+                    <div className="w-full sm:w-auto mt-10 sm:mt-40 pt-4 pr-6 pb-6 pl-6 bg-shrug-bg text-center bg-opacity-80 sm:rounded-lg sm:shadow-md">
                         <span className={`${ebgaramond.className} text-2xl md:text-3xl font-bold`}>
-                            A CELEBRATION of Mike Robillard’s Life in Music
+                            A CELEBRATION of<br className="sm:hidden" /> Mike Robillard’s Life in Music
                         </span>
                         <div className="grid grid-cols-2 sm:pl-8 sm:pr-8 pt-2 pb-1 mb-4">
                             <div className="text-left">
-                                <h3 className={`${inter.className} text-xs sm:text-sm`}>Featuring performances by:</h3>
+                                <h3 className={`${inter.className} text-xs sm:text-sm`}>Performances by:</h3>
                                 <ul className="text-left text-sm sm:text-base">
                                     <li>4 Really Nice Guys</li>
                                     <li>Scissors For Erica</li>
