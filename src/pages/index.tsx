@@ -18,7 +18,7 @@ export default function Home() {
                         priority
                     />
                 </div>
-                <div className="mt-10 sm:mt-40 pt-4 pr-6 pb-6 pl-6 bg-shrug-bg text-center bg-opacity-80 rounded-lg">
+                <div className="mt-10 sm:mt-40 pt-4 pr-6 pb-6 pl-6 bg-shrug-bg text-center bg-opacity-80 sm:rounded-lg sm:shadow-md">
                     <span className={`${ebgaramond.className} text-2xl md:text-3xl font-bold`}>
                         A CELEBRATION of Mike Robillard’s Life in Music
                     </span>
