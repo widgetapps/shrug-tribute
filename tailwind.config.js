@@ -11,7 +11,12 @@ module.exports = {
         'photo-elephant': "url('/img/bg_elephant.png')",
       },
       backgroundPosition: {
-        'top-elephant': 'center top -4rem'
+        'top-elephant': 'center top -2rem',
+        'top-elephant-sm': 'center top -4rem'
+      },
+      backgroundSize: {
+        'cover-elephant': '160%',
+        'cover-elephant-md': '150%'
       },
       colors: {
         'shrug-bg': '#ebebeb',
