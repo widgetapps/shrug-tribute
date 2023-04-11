@@ -1,11 +1,19 @@
 import Image from 'next/image'
 import {EB_Garamond, Inter} from 'next/font/google'
+import Subscribe from "../components/subscribe"
+import {useState} from "react";
 
 const inter = Inter({ subsets: ['latin'] })
 const ebgaramond = EB_Garamond({subsets: ['latin']})
 
 export default function Home() {
+    const [open, setOpen] = useState(false)
+
     return (
+        <div>
+            <Subscribe
+            open={open}
+            setOpen={setOpen} />
         <main className="flex min-h-screen flex-col items-center justify-between bg-photo-elephant bg-top-elephant sm:bg-top-elephant-sm bg-cover-elephant sm:bg-cover-elephant-md md:bg-cover bg-no-repeat">
             <div className="w-full pt-14 flex flex-col items-center justify-center">
                 <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full bg-white flex justify-center items-center bg-opacity-80 border-4 border-white">
@@ -42,6 +50,7 @@ export default function Home() {
                     </div>
                     <button
                         type="button"
+                        onClick={() => setOpen(true)}
                         className="rounded-md bg-shrug-red px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shrug-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                         GET ON THE ADVANCED TICKET LIST
@@ -49,5 +58,6 @@ export default function Home() {
                 </div>
             </div>
         </main>
+        </div>
     )
 }
