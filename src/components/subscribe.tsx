@@ -106,13 +106,15 @@ export default function Subscribe({open, setOpen}) {
                                             sales will begin in September 2023.</p>
                                             <p>We&apos;re looking forward to seeing you!</p>
 
-                                            <button
-                                                type="button"
-                                                onClick={() => setOpen(false)}
-                                                className="rounded-md bg-shrug-red px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shrug-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                            >
-                                                CLOSE
-                                            </button>
+                                            <div className="pt-4 justify-center items-center text-center">
+                                                <button
+                                                    type="button"
+                                                    onClick={() => setOpen(false)}
+                                                    className="rounded-md bg-shrug-red px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shrug-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                                >
+                                                    CLOSE
+                                                </button>
+                                            </div>
                                         </div>
                                         <div className={`${submitted ? 'hidden' : ''} relative mt-6 flex-1 px-4 sm:px-6 text-sm space-y-4`}>
                                             <p>Get first access to ticket sales, just provide your email address and you’ll
