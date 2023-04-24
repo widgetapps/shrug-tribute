@@ -72,7 +72,6 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
                         >
                             GET ON THE ADVANCED TICKET LIST
                         </button>
-                        {isConnected ? (<div>CONNECTED!</div>) : (<div>NOT CONNECTED!</div>)}
                     </div>
                 </div>
             </main>

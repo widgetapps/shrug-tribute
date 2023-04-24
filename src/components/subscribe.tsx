@@ -13,11 +13,18 @@ export default function Subscribe({open, setOpen}) {
     const [error, setError] = useState('');
     const [emailError, setEmailError] = useState('');
 
+    const [submitting, setSubmitting] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
+    const [cta, setCta] = useState('ADD ME TO THE LIST');
+
     const handleSubscribe = async (e: any) => {
         e.preventDefault();
 
         if (email) {
             try {
+                setSubmitting(true);
+                setCta('SUBSCRIBING...');
+
                 let response = await fetch('/api/subscribe', {
                     method: 'POST',
                     body: JSON.stringify({
@@ -34,7 +41,11 @@ export default function Subscribe({open, setOpen}) {
 
                 response = await response.json();
 
-                setOpen(false);
+                setSubmitting(false);
+                setSubmitted(true);
+                setCta('SUBSCRIBED')
+
+                //setOpen(false);
 
             } catch (e: any) {
                 setError('There was a server issue, please try again')
@@ -72,7 +83,7 @@ export default function Subscribe({open, setOpen}) {
                                 leaveTo="translate-x-full"
                             >
                                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
-                                    <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
+                                    <div className={`flex h-full flex-col overflow-y-scroll bg-white shadow-xl`}>
                                         <div className="bg-shrug-red px-4 py-6 sm:px-6">
                                             <div className="flex items-start justify-between">
                                                 <Dialog.Title className="text-base font-semibold leading-6 text-white">
@@ -90,7 +101,20 @@ export default function Subscribe({open, setOpen}) {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="relative mt-6 flex-1 px-4 sm:px-6 text-sm space-y-4">
+                                        <div className={`${!submitted ? 'hidden' : ''} relative mt-6 flex-1 px-4 sm:px-6 text-sm space-y-4`}>
+                                            <p>You've been added to the advanced ticket list. We anticipate advanced ticket
+                                            sales will begin in September 2023.</p>
+                                            <p>We're looking forward to seeing you!</p>
+
+                                            <button
+                                                type="button"
+                                                onClick={() => setOpen(false)}
+                                                className="rounded-md bg-shrug-red px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shrug-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            >
+                                                CLOSE
+                                            </button>
+                                        </div>
+                                        <div className={`${submitted ? 'hidden' : ''} relative mt-6 flex-1 px-4 sm:px-6 text-sm space-y-4`}>
                                             <p>Get first access to ticket sales, just provide your email address and you’ll
                                                 receive an opportunity to purchase tickets before they go on sale for the
                                                 general public.</p>
@@ -108,6 +132,7 @@ export default function Subscribe({open, setOpen}) {
                                                                 type="text"
                                                                 name="name"
                                                                 id="name"
+                                                                disabled={submitted}
                                                                 className="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                                 placeholder="Name"
                                                                 onChange={(e) => setFullname(e.target.value)}
@@ -128,6 +153,7 @@ export default function Subscribe({open, setOpen}) {
                                                                 type="email"
                                                                 name="email"
                                                                 id="email"
+                                                                disabled={submitted}
                                                                 className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                                 placeholder="you@example.com"
                                                                 onChange={(e) => setEmail(e.target.value)}
@@ -147,6 +173,7 @@ export default function Subscribe({open, setOpen}) {
                                                                     aria-describedby="shirt-description"
                                                                     name="shirt"
                                                                     type="checkbox"
+                                                                    disabled={submitted}
                                                                     className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
                                                                     onChange={(e) => setShirt(e.target.checked)}
                                                                 />
@@ -167,6 +194,7 @@ export default function Subscribe({open, setOpen}) {
                                                                     aria-describedby="subscribe-description"
                                                                     name="subscribe"
                                                                     type="checkbox"
+                                                                    disabled={submitted}
                                                                     className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
                                                                     onChange={(e) => setSubscribe(e.target.checked)}
                                                                 />
@@ -186,9 +214,14 @@ export default function Subscribe({open, setOpen}) {
                                                 <div className="pt-4 justify-center items-center text-center">
                                                     <button
                                                         type="submit"
-                                                        className="rounded-md bg-shrug-red px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shrug-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                                        disabled={submitted}
+                                                        className={`inline-flex rounded-md bg-shrug-red px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shrug-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
                                                     >
-                                                        ADD ME TO THE LIST
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={`${submitting ? 'animate-spin' : 'hidden' } w-5 h-5`}>
+                                                            <path fillRule="evenodd" d="M15.312 11.424a5.5 5.5 0 01-9.201 2.466l-.312-.311h2.433a.75.75 0 000-1.5H3.989a.75.75 0 00-.75.75v4.242a.75.75 0 001.5 0v-2.43l.31.31a7 7 0 0011.712-3.138.75.75 0 00-1.449-.39zm1.23-3.723a.75.75 0 00.219-.53V2.929a.75.75 0 00-1.5 0V5.36l-.31-.31A7 7 0 003.239 8.188a.75.75 0 101.448.389A5.5 5.5 0 0113.89 6.11l.311.31h-2.432a.75.75 0 000 1.5h4.243a.75.75 0 00.53-.219z" clipRule="evenodd" />
+                                                        </svg>
+
+                                                        {cta}
                                                     </button>
                                                 </div>
                                             </form>
