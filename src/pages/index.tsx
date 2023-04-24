@@ -1,3 +1,5 @@
+import clientPromise from '../lib/mongodb'
+import { InferGetServerSidePropsType } from "next";
 import Image from 'next/image'
 import {EB_Garamond, Inter} from 'next/font/google'
 import Subscribe from "../components/subscribe"
@@ -6,7 +8,22 @@ import {useState} from "react";
 const inter = Inter({ subsets: ['latin'] })
 const ebgaramond = EB_Garamond({subsets: ['latin']})
 
-export default function Home() {
+export async function getServerSideProps() {
+    try {
+        await clientPromise
+
+        return {
+            props: { isConnected: true},
+        }
+    } catch (e) {
+        console.error(e)
+        return {
+            props: { isConnected: false},
+        }
+    }
+}
+
+export default function Home({ isConnected }: InferGetServerSidePropsType<typeof getServerSideProps>) {
     const [open, setOpen] = useState(false)
 
     return (
@@ -55,6 +72,7 @@ export default function Home() {
                         >
                             GET ON THE ADVANCED TICKET LIST
                         </button>
+                        {isConnected ? (<div>CONNECTED!</div>) : (<div>NOT CONNECTED!</div>)}
                     </div>
                 </div>
             </main>
