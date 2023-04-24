@@ -102,9 +102,9 @@ export default function Subscribe({open, setOpen}) {
                                             </div>
                                         </div>
                                         <div className={`${!submitted ? 'hidden' : ''} relative mt-6 flex-1 px-4 sm:px-6 text-sm space-y-4`}>
-                                            <p>You've been added to the advanced ticket list. We anticipate advanced ticket
+                                            <p>You&apos;ve been added to the advanced ticket list. We anticipate advanced ticket
                                             sales will begin in September 2023.</p>
-                                            <p>We're looking forward to seeing you!</p>
+                                            <p>We&apos;re looking forward to seeing you!</p>
 
                                             <button
                                                 type="button"
