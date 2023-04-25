@@ -66,7 +66,7 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
             <Subscribe
             open={open}
             setOpen={setOpen} />
-            <main className="flex min-h-screen flex-col items-center justify-between bg-photo-elephant bg-top-elephant sm:bg-top-elephant-sm bg-cover-elephant sm:bg-cover-elephant-md md:bg-cover bg-no-repeat">
+            <main className="flex flex-col items-center justify-between bg-photo-elephant bg-top-elephant sm:bg-top-elephant-sm bg-cover-elephant sm:bg-cover-elephant-md md:bg-cover bg-no-repeat">
                 <div className="w-full pt-14 flex flex-col items-center justify-center">
                     <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full bg-white flex justify-center items-center bg-opacity-80 border-4 border-white">
                         <Image
@@ -110,6 +110,20 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
                     </div>
                 </div>
             </main>
+
+            <div className="mt-4 pb-4">
+                <footer className='space-y-2'>
+                    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-sm">
+                        &copy; {(new Date().getFullYear())} Shrug Off Reality
+                    </div>
+                    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-xs">
+                        Elephant photo by EH
+                    </div>
+                    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-xs">
+                        <Link href='https://github.com/widgetapps/shrug-tribute'>The code</Link> is licensed under an MIT License
+                    </div>
+                </footer>
+            </div>
         </div>
     )
 }
