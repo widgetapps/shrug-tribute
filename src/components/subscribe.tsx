@@ -87,7 +87,7 @@ export default function Subscribe({open, setOpen}) {
                                         <div className="bg-shrug-red px-4 py-6 sm:px-6">
                                             <div className="flex items-start justify-between">
                                                 <Dialog.Title className="text-base font-semibold leading-6 text-white">
-                                                    GET ON THE ADVANCED TICKET LIST
+                                                    Advanced Ticket List
                                                 </Dialog.Title>
                                                 <div className="ml-3 flex h-7 items-center">
                                                     <button
@@ -117,10 +117,9 @@ export default function Subscribe({open, setOpen}) {
                                             </div>
                                         </div>
                                         <div className={`${submitted ? 'hidden' : ''} relative mt-6 flex-1 px-4 sm:px-6 text-sm space-y-4`}>
-                                            <p>Get first access to ticket sales, just provide your email address and you’ll
-                                                receive an opportunity to purchase tickets before they go on sale for the
-                                                general public.</p>
-                                            <p>You’ll also have access to event merchandise like t-shirts and more!</p>
+                                            <p>Get early access to ticket sales. Enter your email address for the opportunity
+                                                to purchase tickets before they go on sale to the general public.</p>
+                                            <p>You&apos;ll have access to event merchandise including t-shirts and more.</p>
                                             <p>Be sure to follow us on Facebook or Instagram.</p>
 
                                             <form onSubmit={handleSubscribe}>
@@ -182,7 +181,7 @@ export default function Subscribe({open, setOpen}) {
                                                             </div>
                                                             <div className="ml-3 text-sm leading-6">
                                                                 <label htmlFor="shirt" className="font-medium text-gray-900">
-                                                                    I&apos;m interested in buying a shirt
+                                                                    I&apos;m interested in buying a t-shirt
                                                                 </label>
                                                                 <p id="shirt-description" className="text-gray-500">
                                                                     Final price is TBD, but should be $20-$30 each
