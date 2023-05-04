@@ -29,7 +29,7 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
 
     return (
         <div>
-            <div className="absolute top-0 right-0 m-5">
+            <div className="absolute top-0 left-0 m-5">
                 <div className="space-x-3 justify-center items-center text-center">
                     <Link href="https://www.instagram.com/shrugoffreality/" passHref>
                         <button
@@ -114,7 +114,7 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
             <div className="mt-4 pb-4">
                 <footer className='space-y-2'>
                     <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-sm">
-                        &copy; {(new Date().getFullYear())} Shrug off reality
+                        &copy; {(new Date().getFullYear())} Shrug off reality...
                     </div>
                     <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-xs">
                         Elephant photo by EH
