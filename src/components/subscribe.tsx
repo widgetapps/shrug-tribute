@@ -10,6 +10,7 @@ export default function Subscribe({open, setOpen}) {
     const [email, setEmail] = useState('');
     const [shirt, setShirt] = useState(false);
     const [subscribe, setSubscribe] = useState(false);
+    const [discord, setDiscord] = useState(false);
     const [error, setError] = useState('');
     const [emailError, setEmailError] = useState('');
 
@@ -31,7 +32,8 @@ export default function Subscribe({open, setOpen}) {
                         fullname,
                         email,
                         shirt,
-                        subscribe
+                        subscribe,
+                        discord
                     }),
                     headers: {
                         Accept: 'application/json, text/plain, */*',
@@ -206,6 +208,27 @@ export default function Subscribe({open, setOpen}) {
                                                                 </label>
                                                                 <p id="subscribe-description" className="text-gray-500">
                                                                     You will be emailed updates for only this event
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="relative flex items-start">
+                                                            <div className="flex h-6 items-center">
+                                                                <input
+                                                                    id="discord"
+                                                                    aria-describedby="discord-description"
+                                                                    name="discord"
+                                                                    type="checkbox"
+                                                                    disabled={submitted}
+                                                                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                                                                    onChange={(e) => setDiscord(e.target.checked)}
+                                                                />
+                                                            </div>
+                                                            <div className="ml-3 text-sm leading-6">
+                                                                <label htmlFor="discord" className="font-medium text-gray-900">
+                                                                    I'd like a Discord invite
+                                                                </label>
+                                                                <p id="discord-description" className="text-gray-500">
+                                                                    We have a Shrug Discord server! Want in?
                                                                 </p>
                                                             </div>
                                                         </div>

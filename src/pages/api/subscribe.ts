@@ -5,13 +5,14 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     try {
         const client = await clientPromise;
         const db = client.db(process.env.DB_NAME);
-        const { fullname, email, shirt, subscribe } = req.body;
+        const { fullname, email, shirt, subscribe, discord } = req.body;
 
         const post = await db.collection('subscribers').insertOne({
             fullname,
             email,
             shirt,
             subscribe,
+            discord,
             'date': new Date()
         });
 
