@@ -225,7 +225,7 @@ export default function Subscribe({open, setOpen}) {
                                                             </div>
                                                             <div className="ml-3 text-sm leading-6">
                                                                 <label htmlFor="discord" className="font-medium text-gray-900">
-                                                                    I'd like a Discord invite
+                                                                    I&apos;d like a Discord invite
                                                                 </label>
                                                                 <p id="discord-description" className="text-gray-500">
                                                                     We have a Shrug Discord server! Want in?
