@@ -100,13 +100,7 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
                                 </ul>
                             </div>
                         </div>
-                        <button
-                            type="button"
-                            onClick={() => setOpen(true)}
-                            className="rounded-md bg-shrug-red px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-shrug-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                        >
-                            GET ON THE ADVANCED TICKET LIST
-                        </button>
+                        Ticket Sales begin Oct 3rd.
                     </div>
                 </div>
             </main>
