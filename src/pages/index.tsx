@@ -25,7 +25,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-shrug-light">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-shrug-light bg-shrug-dark">
                 <div className="bg-photo-bench bg-no-repeat bg-top-bench h-[42rem]">
                     <div className="pt-20 pl-16">
                         <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-72 lg:h-72 rounded-full bg-white flex justify-center items-center border-4 border-shrug-light">
@@ -71,7 +71,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="columns-2">
-                        <div className="text-center pt-24">
+                        <div className="text-center pt-16">
                             <div className={`${ebgaramond.className}  pl-20 pr-20`}>
                                 <h2 className="text-shrug-red text-4xl mb-5">A Bench for Remembering</h2>
                                 <div className="text-xl leading-tight mb-10">In addition to celebrating and remembering Mike,

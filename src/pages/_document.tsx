@@ -23,7 +23,7 @@ export default function Document() {
                 }}
             />
         </Head>
-      <body className="bg-shrug-dark">
+      <body className="bg-black">
         <Mainnav />
         <Main />
         <NextScript />
