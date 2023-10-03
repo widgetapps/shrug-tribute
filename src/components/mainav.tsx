@@ -1,13 +1,10 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure } from '@headlessui/react'
 import { TicketIcon } from '@heroicons/react/20/solid'
 import Link from "next/link";
 
 export default function Mainnav() {
     return (
         <Disclosure as="nav" className="bg-shrug-light shadow sticky top-0">
-            {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="flex h-16 justify-between">
@@ -63,7 +60,6 @@ export default function Mainnav() {
                         </div>
                     </div>
                 </>
-            )}
         </Disclosure>
     )
 }

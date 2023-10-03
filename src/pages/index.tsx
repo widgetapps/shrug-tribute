@@ -1,14 +1,9 @@
 import clientPromise from '../lib/mongodb'
-import { InferGetServerSidePropsType } from "next";
 import Image from 'next/image'
-import {EB_Garamond, Inter} from 'next/font/google'
-import Subscribe from "../components/subscribe"
-import {useState} from "react";
+import {EB_Garamond} from 'next/font/google'
 import Link from "next/link";
-import Mainnav from "@/components/mainav";
-import {CurrencyDollarIcon, TicketIcon} from "@heroicons/react/20/solid";
+import {CurrencyDollarIcon} from "@heroicons/react/20/solid";
 
-const inter = Inter({ subsets: ['latin'] })
 const ebgaramond = EB_Garamond({subsets: ['latin']})
 
 export async function getServerSideProps() {
@@ -26,8 +21,7 @@ export async function getServerSideProps() {
     }
 }
 
-export default function Home({ isConnected }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-    const [open, setOpen] = useState(false)
+export default function Home() {
 
     return (
         <>
@@ -45,18 +39,18 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
                             />
                         </div>
                     </div>
-                    <div className="pt-24 ml-80 text-5xl text-center">
+                    <h1 className={`${ebgaramond.className} pt-24 ml-80 text-5xl text-center leading-tight`}>
                         A CELEBRATION of<br/>Mike Robillard’s Life in Music
-                    </div>
+                    </h1>
                 </div>
                 <div className="bg-shrug-light text-shrug-dark flex flex-col gap-10">
                     <div className="columns-2">
-                        <div>
-                            <div>Thursday, Nov 2nd @ 7pm</div>
-                            <div>Loplops Gallery Lounge</div>
-                            <div>Tickets $15</div>
-                            <div>$25 at the door</div>
-                            <div>Tickets available online or at Case’s Music</div>
+                        <div className={`${ebgaramond.className} text-center pt-24 pl-20 pr-20`}>
+                            <h2 className="text-shrug-red text-4xl mb-2">Loplops Gallery Lounge</h2>
+                            <div className="text-2xl mb-5">Thursday, Nov 2nd @ 7pm</div>
+                            <div className="text-xl">Tickets $15</div>
+                            <div className="text-xl">$25 at the door</div>
+                            <div className="mt-5">Tickets available online or at Case’s Music</div>
                         </div>
                         <div>
                             <Image src="/img/photo_mike_1.png" alt="" width={640} height={410} />
@@ -66,20 +60,24 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
                         <div>
                             <Image src="/img/photo_mike_2.png" alt="" width={640} height={410} />
                         </div>
-                        <div>
-                            <div>Featuring performances by:</div>
+                        <div className={`${ebgaramond.className} text-center pt-24 pl-20 pr-20`}>
+                            <h2 className="text-xl mb-4">Featuring performances by:</h2>
                             <ul>
-                                <li>4 Really Nice Guys</li>
-                                <li>Scissors for Erica</li>
-                                <li>Spiderback</li>
-                                <li>and friends</li>
+                                <li className="text-shrug-red text-3xl">4 Really Nice Guys</li>
+                                <li className="text-shrug-red text-3xl">Scissors for Erica</li>
+                                <li className="text-shrug-red text-3xl">Spiderback</li>
+                                <li className="text-2xl mt-3">and friends...</li>
                             </ul>
                         </div>
                     </div>
                     <div className="columns-2">
-                        <div>
-                            <div>A Bench for Remembering</div>
-                            <div>Help us raise funds to get Mike a bench in Sault Ste Marie</div>
+                        <div className="text-center pt-24">
+                            <div className={`${ebgaramond.className}  pl-20 pr-20`}>
+                                <h2 className="text-shrug-red text-4xl mb-5">A Bench for Remembering</h2>
+                                <div className="text-xl leading-tight mb-10">In addition to celebrating and remembering Mike,
+                                    the event also hopes to raise money for a park bench in his name, where future
+                                    artists might sit, have coffee, and plan their artistic takeover of the world! </div>
+                            </div>
 
                             <Link href="https://www.gofundme.com/f/mike-robillard?utm_campaign=p_lico+share-sheet&utm_medium=copy_link" passHref>
                                 <button
@@ -96,10 +94,10 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className={`${ebgaramond.className} text-center p-20 text-md`}>
                     <div>&copy; 2023 Shrug off reality...</div>
                     <div>Bench photo by Cathy Bouchard</div>
-                    <div>The code is licensed under an MIT License</div>
+                    <div>The <Link href='https://github.com/widgetapps/shrug-tribute' className="underline hover:text-shrug-red">code</Link> is licensed under an MIT License</div>
                 </div>
             </div>
         </>
