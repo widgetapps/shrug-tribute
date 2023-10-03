@@ -49,14 +49,29 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
                     </div>
                 </div>
                 <div className="bg-shrug-light text-shrug-dark">
-                    <div>
-                        content 1
+                    <div className="columns-2">
+                        <div>
+                            Copy
+                        </div>
+                        <div>
+                            <Image src="/img/photo_mike_1.png" alt="" width={640} height={410} />
+                        </div>
                     </div>
-                    <div>
-                        content 2
+                    <div className="columns-2">
+                        <div>
+                            <Image src="/img/photo_mike_2.png" alt="" width={640} height={410} />
+                        </div>
+                        <div>
+                            Copy
+                        </div>
                     </div>
-                    <div>
-                        content 3
+                    <div className="columns-2">
+                        <div>
+                            Copy
+                        </div>
+                        <div>
+                            <Image src="/img/photo_bench.png" alt="" width={640} height={410} />
+                        </div>
                     </div>
                 </div>
                 <div>
