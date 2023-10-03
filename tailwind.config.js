@@ -19,7 +19,8 @@ module.exports = {
         'cover-elephant-md': '150%'
       },
       colors: {
-        'shrug-bg': '#ebebeb',
+        'shrug-light': '#ebebeb',
+        'shrug-dark': '#292929',
         'shrug-red': '#E92300',
         'shrug-red-400': '#EB6D56'
       }
