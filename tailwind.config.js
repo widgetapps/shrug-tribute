@@ -9,8 +9,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         'photo-elephant': "url('/img/bg_elephant.png')",
+        'photo-bench': "url('/img/bg_bench.png')",
       },
       backgroundPosition: {
+        'top-bench': 'center top 10rem',
+        'top-bench-sm': 'center top -4rem',
         'top-elephant': 'center top -2rem',
         'top-elephant-sm': 'center top -4rem'
       },
