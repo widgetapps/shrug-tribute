@@ -39,7 +39,7 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                    <h1 className={`${ebgaramond.className} pt-20 ml-12 text-2xl sm:pt-20 sm:ml-36 sm:text-3xl md:pt-20 md:ml-52 md:text-4xl lg:pt-24 lg:ml-80 lg:text-5xl text-center leading-tight`}>
+                    <h1 className={`${ebgaramond.className} pt-20 ml-24 text-2xl sm:pt-20 sm:ml-36 sm:text-3xl md:pt-20 md:ml-52 md:text-4xl lg:pt-24 lg:ml-80 lg:text-5xl text-center leading-tight`}>
                         A CELEBRATION of<br/>Mike Robillard’s Life in Music
                     </h1>
                 </div>
