@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import {useRouter} from "next/router";
 import {useEffect} from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 import * as ga from  "../lib/ga";
 
@@ -23,5 +24,10 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+      <>
+        <Component {...pageProps} />
+        <Analytics />
+      </>
+  );
 }
