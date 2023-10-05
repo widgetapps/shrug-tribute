@@ -21,14 +21,14 @@ module.exports = {
       backgroundSize: {
         'cover-bench': '65%',
         'cover-bench-sm': '100%',
-        'cover-bench-sm': '100%',
+        'cover-bench-md': '100%',
         'cover-elephant': '160%',
         'cover-elephant-md': '150%'
       },
       colors: {
         'shrug-light': '#ebebeb',
         'shrug-dark': '#292929',
-        'shrug-red': '#E92300',
+        'shrug-red': '#c8102e',
         'shrug-red-400': '#EB6D56'
       }
     },
