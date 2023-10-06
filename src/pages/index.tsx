@@ -60,14 +60,32 @@ export default function Home() {
                         <div className={'basis-full lg:basis-1/2'}>
                             <Image src="/img/photo_mike_2.png" alt="" width={640} height={410} className="w-full" />
                         </div>
-                        <div className={`${ebgaramond.className} text-center pt-8 px-1.5 lg:pt-24 lg:px-20 basis-full lg:basis-1/2`}>
+                        <div className={`${ebgaramond.className} text-left pt-8 px-1.5 lg:pt-20 lg:px-20 basis-full lg:basis-1/2`}>
                             <h2 className="text-xl mb-4">Featuring performances by:</h2>
                             <ul>
-                                <li className="text-shrug-red text-3xl">4 Really Nice Guys</li>
-                                <li className="text-shrug-red text-3xl">Scissors for Erica</li>
-                                <li className="text-shrug-red text-3xl">Spiderback</li>
+                                <li className="text-shrug-red text-3xl">
+                                    <Link href="https://4reallyniceguys.bandcamp.com/album/shrug-off-reality-extracts-remixed" passHref className="hover:opacity-50">
+                                        <Image src="/img/bandcamp-button-circle-aqua-32.png" className="inline-block mr-2" alt="" width={32} height={32} />
+                                        <span>4 Really Nice Guys</span>
+                                    </Link>
+                                </li>
+                                <li className="text-shrug-red text-3xl">
+                                    <div className="inline-block w-[32px] mr-2"></div>
+                                    Scissors for Erica
+                                </li>
+                                <li className="text-shrug-red text-3xl">
+                                    <Link href="https://spiderback.bandcamp.com/album/acrobiotics-2023-remaster" passHref className="hover:opacity-50">
+                                        <Image src="/img/bandcamp-button-circle-aqua-32.png" className="inline-block mr-2" alt="" width={32} height={32} />
+                                        <span>Spiderback</span>
+                                    </Link>
+                                </li>
                                 <li className="text-2xl mt-3">and friends...</li>
                             </ul>
+                            <div className="mt-4">
+
+                                <Image src="/img/bandcamp-button-circle-aqua-32.png" className="inline-block mr-2" alt="" width={24} height={24} />
+                                Check out their music on Bandcamp!
+                            </div>
                         </div>
                     </div>
                     <div className="flex flex-col-reverse md:flex-row">
