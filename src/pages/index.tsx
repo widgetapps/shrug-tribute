@@ -60,7 +60,7 @@ export default function Home() {
                         <div className={'basis-full lg:basis-1/2'}>
                             <Image src="/img/photo_mike_2.png" alt="" width={640} height={410} className="w-full" />
                         </div>
-                        <div className={`${ebgaramond.className} text-left pt-8 px-1.5 lg:pt-20 lg:px-20 basis-full lg:basis-1/2`}>
+                        <div className={`${ebgaramond.className} text-left pt-8 px-1.5 lg:pt-20 lg:px-28 basis-full lg:basis-1/2`}>
                             <h2 className="text-xl mb-4">Featuring performances by:</h2>
                             <ul>
                                 <li className="text-shrug-red text-3xl">
