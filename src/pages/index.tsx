@@ -92,9 +92,11 @@ export default function Home() {
                         <div className="text-center py-8 basis-full lg:basis-1/2">
                             <div className={`${ebgaramond.className}  px-4`}>
                                 <h2 className="text-shrug-red text-3xl lg:text-4xl mb-5">A Bench for Remembering</h2>
-                                <div className="text-lg lg:text-xl leading-tight mb-10">In addition to celebrating and remembering Mike,
+                                <div className="text-lg lg:text-xl leading-tight mb-2">In addition to celebrating and remembering Mike,
                                     the event also hopes to raise money for a park bench in his name, where future
-                                    artists might sit, have coffee, and plan their artistic takeover of the world! </div>
+                                    artists might sit, have coffee, and plan their artistic takeover of the world!</div>
+                                <div className="text-base mb-10">All proceeds from this event go to purchase Mike a commemorative bench in Sault Ste Marie.
+                                Funds raised beyond that goal will be donated to the Canadian Cancer Society.</div>
                             </div>
 
                             <Link href="https://www.gofundme.com/f/mike-robillard?utm_campaign=p_lico+share-sheet&utm_medium=copy_link" passHref>
