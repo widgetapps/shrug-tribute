@@ -46,7 +46,7 @@ export default function Home() {
                 <div className="bg-shrug-light text-shrug-dark flex flex-col gap-10">
                     <div className="flex flex-col-reverse md:flex-row">
                         <div className={`${ebgaramond.className} text-center pt-8 px-1.5 lg:pt-24 lg:px-20 basis-full lg:basis-1/2`}>
-                            <h2 className="text-shrug-red text-3xl lg:text-4xl mb-2">Loplops Gallery Lounge</h2>
+                            <h2 className="text-shrug-red text-3xl lg:text-4xl mb-2">Loplops Gallery~Lounge</h2>
                             <div className="text-xl lg:text-2xl mb-5">Thursday, Nov 2nd @ 7pm</div>
                             <div className="text-xl">Tickets $15</div>
                             <div className="text-xl">$25 at the door</div>
