@@ -13,7 +13,7 @@ export default function Pressrelease() {
                     <h4 className="text-xl">FOR IMMEDIATE RELEASE</h4>
                     <div>October 10, 2023</div>
                     <h1 className="text-4xl mt-10">SPECIAL CONCERT ANNOUNCEMENT</h1>
-                    <h2 className="text-2xl mb-6">A CELEBRATION OF MIKE ROBILLARD's LIFE IN MUSIC</h2>
+                    <h2 className="text-2xl mb-6">A CELEBRATION OF MIKE ROBILLARD&apos;s LIFE IN MUSIC</h2>
                     <div className="my-4">
                         <span className="font-bold">Sault Ste. Marie, ON</span>: On November 2nd, current and former members of the local music
                         community will be holding a special event to celebrate the life and music of one of their own who
@@ -24,7 +24,7 @@ export default function Pressrelease() {
                     <div className="my-4">
                         Mike was dedicated to promoting original music in Sault Ste. Marie, where he created "Shrug
                         off reality...", an event series to host and showcase local talent. Shrug also produced a local
-                        compilation ("Extracts" '92) but is best known for the long-lasting friendships which developed
+                        compilation ("Extracts" &apos;92) but is best known for the long-lasting friendships which developed
                         there. The spirit of Shrug continued to inspired Mike years later as he explored the Toronto
                         music scene and hosted regular poetry nights at the Savage Garden.
                     </div>
@@ -32,11 +32,11 @@ export default function Pressrelease() {
                         Having Lived in Toronto, Victoria and Prague, Mike returned to Sault Ste. Marie where he
                         became a well-known cab driver and continued playing the bass, often on stage at Loplops
                         where this special concert will occur on November 2nd, a date chosen to celebrate what would have
-                        been Mike's 53rd Birthday.
+                        been Mike&apos;s 53rd Birthday.
                     </div>
                     <div className="my-4">
                         Three bands will be reuniting and performing music to celebrate his life. "4 Really Nice Guys",
-                        Mike's first band formed in the early 90's during high school and featured fun danceable beats
+                        Mike&apos;s first band formed in the early 90&apos;s during high school and featured fun danceable beats
                         as well as a horn section. "Scissors for Erica" was a Toronto based band made up of former
                         Saultites, and "Spiderback" a band from the early 2000s formed after Mike moved home.
                     </div>
@@ -49,7 +49,7 @@ export default function Pressrelease() {
                         Please note that this is a one-off special event and will not be repeated. Some of the
                         musicians involved in this event are still actively performing and writing music, while
                         others have not performed for many years. Whether you were a friend of Mike, a fan of
-                        his music, or whether you're simply curious about the music scene from 30 years ago,
+                        his music, or whether you&apos;re simply curious about the music scene from 30 years ago,
                         we hope you will consider attending the show and following Shrug off reality... on
                         Facebook where more details and special content will be released as the event
                         approaches.
@@ -64,7 +64,7 @@ export default function Pressrelease() {
                     </div>
                     <div className="my-4">
                         <div className="font-bold">Event:</div>
-                        <div>Shrug off reality... 2023 "A Celebration of Mike Robillard's Life in Music"</div>
+                        <div>Shrug off reality... 2023 "A Celebration of Mike Robillard&apos;s Life in Music"</div>
                     </div>
                     <div className="my-4">
                         <div className="font-bold">Contact:</div>
@@ -77,7 +77,7 @@ export default function Pressrelease() {
                     <div className="my-4">
                         <div className="font-bold">Tickets</div>
                         <div>$15 or $25 @ the door</div>
-                        <div>Available online, and @ Case's Music</div>
+                        <div>Available online, and @ Case&apos;s Music</div>
                         <div><Link href="https://www.eventbrite.ca/e/a-celebration-of-mike-robillards-life-in-music-tickets-722773855057" passHref className="text-shrug-red hover:opacity-50">https://www.eventbrite.ca/e/a-celebration-of-mike-robillards-life-in-music-tickets-722773855057</Link></div>
                     </div>
                     <div className="my-4">
@@ -105,6 +105,7 @@ export default function Pressrelease() {
                 </div>
                 <div className={`${ebgaramond.className} text-center px-4 py-10 lg:px-20 lg:py-20 text-md`}>
                     <div>&copy; {(new Date().getFullYear())} Shrug off reality...</div>
+                    <div><Link href="https://shrugoffreality.com/" passHref className="underline hover:opacity-50">shrugoffreality.com</Link></div>
                     <div>Bench photo by Cathy Bouchard</div>
                     <div>The <Link href='https://github.com/widgetapps/shrug-tribute' className="underline hover:text-shrug-red">code</Link> is licensed under an MIT License</div>
                 </div>
