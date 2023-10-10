@@ -29,7 +29,7 @@ export default function Pressrelease() {
                         music scene and hosted regular poetry nights at the Savage Garden.
                     </div>
                     <div className="my-4">
-                        Having Lived in Toronto, Victoria and Prague, Mike returned to Sault Ste. Marie where he
+                        Having lived in Toronto, Victoria and Prague, Mike returned to Sault Ste. Marie where he
                         became a well-known cab driver and continued playing the bass, often on stage at Loplops
                         where this special concert will occur on November 2nd, a date chosen to celebrate what would have
                         been Mike&apos;s 53rd Birthday.
