@@ -70,8 +70,10 @@ export default function Home() {
                                     </Link>
                                 </li>
                                 <li className="text-shrug-red text-3xl">
-                                    <div className="inline-block w-[32px] mr-2"></div>
-                                    Scissors for Erica
+                                    <Link href="https://scissorsforerica.bandcamp.com/" passHref className="hover:opacity-50">
+                                        <Image src="/img/bandcamp-button-circle-aqua-32.png" className="inline-block mr-2" alt="" width={32} height={32} />
+                                        <span>Scissors for Erica</span>
+                                    </Link>
                                 </li>
                                 <li className="text-shrug-red text-3xl">
                                     <Link href="https://spiderback.bandcamp.com/album/acrobiotics-2023-remaster" passHref className="hover:opacity-50">
