@@ -24,7 +24,7 @@ export default function Pressrelease() {
                     <div className="my-4">
                         Mike was dedicated to promoting original music in Sault Ste. Marie, where he created &quot;Shrug
                         off reality...&quot;, an event series to host and showcase local talent. Shrug also produced a local
-                        compilation ("Extracts" &apos;92) but is best known for the long-lasting friendships which developed
+                        compilation (&quot;Extracts&quot; &apos;92) but is best known for the long-lasting friendships which developed
                         there. The spirit of Shrug continued to inspired Mike years later as he explored the Toronto
                         music scene and hosted regular poetry nights at the Savage Garden.
                     </div>
@@ -60,7 +60,7 @@ export default function Pressrelease() {
                     </div>
                     <div className="my-4">
                         <div className="font-bold">Location:</div>
-                        <div>"<Link href="https://www.google.com/maps/place/Loplops/@46.5083156,-84.3288818,15z/data=!4m6!3m5!1s0x4d36384bb362d7a5:0x512bce89c2e74c12!8m2!3d46.5083156!4d-84.3288818!16s%2Fg%2F1tdltxnh?entry=ttu" passHref className="text-shrug-red hover:opacity-50">Loplops Gallery~Lounge</Link>" 651 Queen Street East</div>
+                        <div>&quot;<Link href="https://www.google.com/maps/place/Loplops/@46.5083156,-84.3288818,15z/data=!4m6!3m5!1s0x4d36384bb362d7a5:0x512bce89c2e74c12!8m2!3d46.5083156!4d-84.3288818!16s%2Fg%2F1tdltxnh?entry=ttu" passHref className="text-shrug-red hover:opacity-50">Loplops Gallery~Lounge</Link>&quot; 651 Queen Street East</div>
                     </div>
                     <div className="my-4">
                         <div className="font-bold">Event:</div>
@@ -89,7 +89,7 @@ export default function Pressrelease() {
                         <div><Link href="https://www.instagram.com/shrugoffreality/" passHref className="text-shrug-red hover:opacity-50">https://www.instagram.com/shrugoffreality/</Link></div>
                     </div>
                     <div className="my-4">
-                        <div className="font-bold">GoFundMe "A Bench for Remembering"</div>
+                        <div className="font-bold">GoFundMe &quot;A Bench for Remembering&quot;</div>
                         <div><Link href="https://www.gofundme.com/f/mike-robillard" passHref className="text-shrug-red hover:opacity-50">https://www.gofundme.com/f/mike-robillard</Link></div>
                     </div>
                     <div className="my-4">
