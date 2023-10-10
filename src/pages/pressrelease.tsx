@@ -22,8 +22,8 @@ export default function Pressrelease() {
                         determined that his creativity not be forgotten.</span>
                     </div>
                     <div className="my-4">
-                        Mike was dedicated to promoting original music in Sault Ste. Marie, where he created "Shrug
-                        off reality...", an event series to host and showcase local talent. Shrug also produced a local
+                        Mike was dedicated to promoting original music in Sault Ste. Marie, where he created &quot;Shrug
+                        off reality...&quot;, an event series to host and showcase local talent. Shrug also produced a local
                         compilation ("Extracts" &apos;92) but is best known for the long-lasting friendships which developed
                         there. The spirit of Shrug continued to inspired Mike years later as he explored the Toronto
                         music scene and hosted regular poetry nights at the Savage Garden.
@@ -35,10 +35,10 @@ export default function Pressrelease() {
                         been Mike&apos;s 53rd Birthday.
                     </div>
                     <div className="my-4">
-                        Three bands will be reuniting and performing music to celebrate his life. "4 Really Nice Guys",
+                        Three bands will be reuniting and performing music to celebrate his life. &quot;4 Really Nice Guys&quot;,
                         Mike&apos;s first band formed in the early 90&apos;s during high school and featured fun danceable beats
-                        as well as a horn section. "Scissors for Erica" was a Toronto based band made up of former
-                        Saultites, and "Spiderback" a band from the early 2000s formed after Mike moved home.
+                        as well as a horn section. &quot;Scissors for Erica&quot; was a Toronto based band made up of former
+                        Saultites, and &quot;Spiderback&quot; a band from the early 2000s formed after Mike moved home.
                     </div>
                     <div className="my-4">In addition to celebrating and remembering Mike, the event also hopes to raise money for the
                         installation of a commemorative park bench in his name, where future artists might sit, have
@@ -64,7 +64,7 @@ export default function Pressrelease() {
                     </div>
                     <div className="my-4">
                         <div className="font-bold">Event:</div>
-                        <div>Shrug off reality... 2023 "A Celebration of Mike Robillard&apos;s Life in Music"</div>
+                        <div>Shrug off reality... 2023 &quot;A Celebration of Mike Robillard&apos;s Life in Music&quot;</div>
                     </div>
                     <div className="my-4">
                         <div className="font-bold">Contact:</div>
