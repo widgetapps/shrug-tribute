@@ -27,7 +27,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Shrug off reality... 2023 - A Celebration of Mike Robillard's Life in Music</title>
+                <title>Shrug off reality... 2023 - A Celebration of Mike Robillard&apos;s Life in Music</title>
 
                 <meta name="description" content="On November 2nd, current and former members of the local music community
             will be holding a special event to celebrate the life and music of one of their own who succumbed to cancer

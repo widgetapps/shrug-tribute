@@ -9,7 +9,7 @@ export default function Pressrelease() {
     return (
         <>
             <Head>
-                <title>Press release: Shrug off reality... 2023 - A Celebration of Mike Robillard's Life in Music</title>
+                <title>Press release: Shrug off reality... 2023 - A Celebration of Mike Robillard&apos;s Life in Music</title>
 
                 <meta name="description" content="Sault Ste. Marie, ON: On November 2nd, current and former members of the local music community
             will be holding a special event to celebrate the life and music of one of their own who succumbed to cancer
