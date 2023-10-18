@@ -91,6 +91,10 @@ export default function Pressrelease() {
                         <div><Link href="https://www.eventbrite.ca/e/a-celebration-of-mike-robillards-life-in-music-tickets-722773855057" passHref className="text-shrug-red hover:opacity-50">https://www.eventbrite.ca/e/a-celebration-of-mike-robillards-life-in-music-tickets-722773855057</Link></div>
                     </div>
                     <div className="my-4">
+                        <div className="font-bold">Website</div>
+                        <div><Link href="https://shrugoffreality.com/" passHref className="text-shrug-red hover:opacity-50">https://shrugoffreality.com</Link></div>
+                    </div>
+                    <div className="my-4">
                         <div className="font-bold">Facebook</div>
                         <div><Link href="https://www.facebook.com/shrugoffreality" passHref className="text-shrug-red hover:opacity-50">https://www.facebook.com/shrugoffreality</Link></div>
                     </div>
