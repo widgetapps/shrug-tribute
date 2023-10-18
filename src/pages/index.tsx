@@ -3,6 +3,7 @@ import Image from 'next/image'
 import {EB_Garamond} from 'next/font/google'
 import Link from "next/link";
 import {CurrencyDollarIcon} from "@heroicons/react/20/solid";
+import Head from "next/head";
 
 const ebgaramond = EB_Garamond({subsets: ['latin']})
 
@@ -25,6 +26,15 @@ export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>Shrug off reality... 2023 - A Celebration of Mike Robillard's Life in Music</title>
+
+                <meta name="description" content="On November 2nd, current and former members of the local music community
+            will be holding a special event to celebrate the life and music of one of their own who succumbed to cancer
+            in 2022. Mike Robillard was a bass player, writer, artist, and podcaster, whose passing left behind a legacy
+            of passion for the arts." />
+            </Head>
+
             <div className="mx-auto max-w-7xl px-0 lg:px-8 text-shrug-light bg-shrug-dark">
                 <div className="bg-photo-bench bg-no-repeat bg-top-bench bg-cover-bench sm:bg-top-bench-sm md:bg-top-bench-md md:h-[30rem] h-[23rem] lg:h-[42rem]">
                     <div className="pt-6 pl-8 sm:pt-8 sm:pl-10 lg:pt-20 lg:pl-16">

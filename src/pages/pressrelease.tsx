@@ -1,5 +1,6 @@
 import {EB_Garamond} from 'next/font/google'
 import Link from "next/link";
+import Head from "next/head";
 
 const ebgaramond = EB_Garamond({subsets: ['latin']})
 
@@ -7,6 +8,15 @@ export default function Pressrelease() {
 
     return (
         <>
+            <Head>
+                <title>Press release: Shrug off reality... 2023 - A Celebration of Mike Robillard's Life in Music</title>
+
+                <meta name="description" content="Sault Ste. Marie, ON: On November 2nd, current and former members of the local music community
+            will be holding a special event to celebrate the life and music of one of their own who succumbed to cancer
+            in 2022. Mike Robillard was a bass player, writer, artist, and podcaster, whose passing left behind a legacy
+            of passion for the arts." />
+            </Head>
+
             <div className={`${ebgaramond.className} mx-auto max-w-7xl px-0 lg:px-8 text-shrug-light bg-shrug-dark`}>
                 <div className="bg-shrug-light text-shrug-dark p-24">
                     <h3 className="text-2xl">PRESS RELEASE</h3>
