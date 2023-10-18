@@ -128,6 +128,7 @@ export default function Home() {
                 </div>
                 <div className={`${ebgaramond.className} text-center px-4 py-10 lg:px-20 lg:py-20 text-md`}>
                     <div>&copy; {(new Date().getFullYear())} Shrug off reality...</div>
+                    <div><Link href="https://shrugoffreality.com/pressrelease" passHref className="underline hover:opacity-50">Press Release</Link></div>
                     <div>Bench photo by Cathy Bouchard</div>
                     <div>The <Link href='https://github.com/widgetapps/shrug-tribute' className="underline hover:text-shrug-red">code</Link> is licensed under an MIT License</div>
                 </div>
