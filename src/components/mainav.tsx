@@ -1,5 +1,4 @@
 import { Disclosure } from '@headlessui/react'
-import { TicketIcon } from '@heroicons/react/20/solid'
 import Link from "next/link";
 
 export default function Mainnav() {
@@ -46,15 +45,6 @@ export default function Mainnav() {
                             </div>
                             <div className="flex items-center">
                                 <div className="flex-shrink-0">
-                                    <Link href="https://www.eventbrite.ca/e/a-celebration-of-mike-robillards-life-in-music-tickets-722773855057" passHref>
-                                        <button
-                                            type="button"
-                                            className="relative inline-flex items-center gap-x-1.5 rounded-md bg-shrug-red px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-shrug-red hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                        >
-                                            <TicketIcon className="-ml-0.5 h-5 w-5" aria-hidden="true" />
-                                            Buy Tickets
-                                        </button>
-                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -58,9 +58,8 @@ export default function Home() {
                         <div className={`${ebgaramond.className} text-center pt-8 px-1.5 lg:pt-24 lg:px-20 basis-full lg:basis-1/2`}>
                             <h2 className="text-shrug-red text-3xl lg:text-4xl mb-2">Loplops Gallery~Lounge</h2>
                             <div className="text-xl lg:text-2xl mb-5">Thursday, Nov 2nd @ 7pm</div>
-                            <div className="text-xl">Tickets $15</div>
-                            <div className="text-xl">$20 at the door</div>
-                            <div className="mt-5">Tickets available online or at Case’s Music</div>
+                            <div className="text-xl">It was a well attended event! Thanks to everyone for coming out. Please
+                            stay tuned, we'll be posting lots of content & memories here real soon.</div>
                         </div>
                         <div className={'basis-full lg:basis-1/2'}>
                             <Image src="/img/photo_mike_1.png" alt="" width={640} height={410} className="w-full" />
